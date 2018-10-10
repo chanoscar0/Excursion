@@ -5,7 +5,6 @@ class Option extends Component {
     super();
     this.state = {
       activities: [],
-      trip: {}
     };
   }
   componentDidMount(){

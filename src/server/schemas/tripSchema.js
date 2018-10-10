@@ -1,8 +1,11 @@
 const mongoose = require('mongoose');
-
-const Trip= new mongoose.Schema({
-  u_id: {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
-  destination: String,
+const Schema = mongoose.Schema;
+const Trip= new Schema({
+  user_id: Number,
+  tripActivities: {
+    destinationName: String,
+    events: []
+  }
 });
 
 module.exports = mongoose.model('Trip', Trip);

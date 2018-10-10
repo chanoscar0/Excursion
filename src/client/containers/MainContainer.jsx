@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 class MainContainer extends Component {
   constructor(props){
@@ -10,6 +10,7 @@ class MainContainer extends Component {
     return (
       <div>
         <h1>Excursion</h1>
+        <NavLink to='/myTrips'>My Trips</NavLink>
         <h2>Pick a Continent</h2>
         <button><Link to='/North%20America'>North America</Link></button>
         <button><Link to='/Asia'>Asia</Link></button>
